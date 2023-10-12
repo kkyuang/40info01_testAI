@@ -18,11 +18,13 @@ class Cell:
         
         #초기 위치
         self.position = position
+        #초기 속도
+        self.velocity = np.array([0, 0])
         #초기 크기
         self.mass = mass
         self.size = math.sqrt(mass)
 
     #DPinfo: 외부 정보를 격자 형태로 전달.
     def refreshPosition(self, DPinfo):
-        self.velocity = self.nn.CalcVelocity(self.position, self.size, DPinfo)
+        self.velocity = self.nn.CalcVelocity(self.velocity, self.size, DPinfo)
         self.position += self.velocity * dt

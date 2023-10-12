@@ -10,8 +10,10 @@ class NN:
 
         #편향
 
-    def transToGene(self): #인공신경망 정보를 유전자로 변환
+    def GeneToNN(self): #유전자 정보를 인공신경망으로 변환
+
+    def NNToGene(self): #인공신경망 정보를 유전자로 변환
         
-        
-    def CalcVelocity(self, position, size, DPinfo): #외부 정보와 내부 정보를 계산하여 속도를 반환
+
+    def CalcVelocity(self, velocity, size, DPinfo): #외부 정보와 내부 정보를 계산하여 속도를 반환
         
